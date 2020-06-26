@@ -12,8 +12,6 @@ class Node :
         self.question = question
         self.left     = left    # ("NO" branch)
         self.right    = right   # ("YES" branch)
-        self.prev     = prev    # (prev node)
-        self.depth    = depth   # (branch depth)
 
 def yes (ques, n) :
     "The user answers 'yes' or something similar. Otherwise it's a no"
@@ -197,7 +195,6 @@ def main () :
           elif (c == 'r'):
             buildTree()
 
-
         uqCount = 0                  # Beginning real questions now
         p = knowledge
         while p.left != None :            
@@ -228,3 +225,4 @@ def main () :
         
 # =====================================================================
 if __name__ == "__main__" : main ()
+
